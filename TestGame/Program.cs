@@ -7,28 +7,28 @@ int count = 0;
 int result = 0;
 string userString = Console.ReadLine();
 int numberB = Convert.ToInt32(userString);
-while(result<1)
+while(exit<1)
 {
-    if( numberB == numberA)
+    if( result == number)
     {
         Console.WriteLine("Ура! Вы угадали число!");
         count++;
-        result++;
+        exit++;
     }
     else
     {
-        if( numberB < numberA)
+        if( result > number)
         {
             Console.WriteLine("Твое число меньше загаданного, попробуй еще раз.");
             userString = Console.ReadLine();
-            numberB = Convert.ToInt32(userString);
+            number = Convert.ToInt32(userString);
             count++;
          }
         else
         {
             Console.WriteLine("Твое число больше загаданного, попробуй еще раз.");
             userString = Console.ReadLine();
-            numberB = Convert.ToInt32(userString);
+            number = Convert.ToInt32(userString);
             count++;
         }
     }

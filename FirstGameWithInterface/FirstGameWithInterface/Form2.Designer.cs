@@ -73,6 +73,7 @@
             this.CheckBtn.TabIndex = 7;
             this.CheckBtn.Text = "Проверить";
             this.CheckBtn.UseVisualStyleBackColor = true;
+            this.CheckBtn.Click += new System.EventHandler(this.CheckBtn_Click);
             // 
             // Form2
             // 
