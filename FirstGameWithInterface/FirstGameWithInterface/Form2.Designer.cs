@@ -28,33 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.checkBtn = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.ExitBtn = new System.Windows.Forms.Button();
+            this.CheckBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.CheckBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // checkBtn
-            // 
-            this.checkBtn.Location = new System.Drawing.Point(187, 90);
-            this.checkBtn.Name = "checkBtn";
-            this.checkBtn.Size = new System.Drawing.Size(75, 23);
-            this.checkBtn.TabIndex = 0;
-            this.checkBtn.Text = "Проверить";
-            this.checkBtn.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(71, 92);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // ExitBtn
             // 
-            this.ExitBtn.Font = new System.Drawing.Font("Impact", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ExitBtn.Font = new System.Drawing.Font("Book Antiqua", 21.75F, System.Drawing.FontStyle.Bold);
             this.ExitBtn.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.ExitBtn.Location = new System.Drawing.Point(612, 338);
+            this.ExitBtn.Location = new System.Drawing.Point(382, 14);
             this.ExitBtn.Name = "ExitBtn";
             this.ExitBtn.Size = new System.Drawing.Size(117, 51);
             this.ExitBtn.TabIndex = 4;
@@ -62,25 +46,55 @@
             this.ExitBtn.UseVisualStyleBackColor = true;
             this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
             // 
+            // CheckBox1
+            // 
+            this.CheckBox1.Location = new System.Drawing.Point(12, 37);
+            this.CheckBox1.Name = "CheckBox1";
+            this.CheckBox1.Size = new System.Drawing.Size(184, 20);
+            this.CheckBox1.TabIndex = 5;
+            this.CheckBox1.TextChanged += new System.EventHandler(this.CheckBox1_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Book Antiqua", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(7, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(217, 26);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Введите свое число:\r\n";
+            // 
+            // CheckBtn
+            // 
+            this.CheckBtn.Font = new System.Drawing.Font("Book Antiqua", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CheckBtn.Location = new System.Drawing.Point(242, 14);
+            this.CheckBtn.Name = "CheckBtn";
+            this.CheckBtn.Size = new System.Drawing.Size(134, 51);
+            this.CheckBtn.TabIndex = 7;
+            this.CheckBtn.Text = "Проверить";
+            this.CheckBtn.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(741, 401);
+            this.ClientSize = new System.Drawing.Size(511, 77);
+            this.Controls.Add(this.CheckBtn);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.CheckBox1);
             this.Controls.Add(this.ExitBtn);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.checkBtn);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button checkBtn;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button ExitBtn;
+        private System.Windows.Forms.TextBox CheckBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button CheckBtn;
     }
 }

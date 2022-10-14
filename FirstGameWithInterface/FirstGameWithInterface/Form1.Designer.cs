@@ -35,7 +35,7 @@
             // 
             // StartBtn
             // 
-            this.StartBtn.Font = new System.Drawing.Font("Impact", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.StartBtn.Font = new System.Drawing.Font("Book Antiqua", 21.75F, System.Drawing.FontStyle.Bold);
             this.StartBtn.ForeColor = System.Drawing.SystemColors.ControlText;
             this.StartBtn.Location = new System.Drawing.Point(169, 100);
             this.StartBtn.Name = "StartBtn";
@@ -47,7 +47,7 @@
             // 
             // ExitBtn
             // 
-            this.ExitBtn.Font = new System.Drawing.Font("Impact", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ExitBtn.Font = new System.Drawing.Font("Book Antiqua", 21.75F, System.Drawing.FontStyle.Bold);
             this.ExitBtn.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ExitBtn.Location = new System.Drawing.Point(300, 100);
             this.ExitBtn.Name = "ExitBtn";
@@ -61,9 +61,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label1.Font = new System.Drawing.Font("Book Antiqua", 10F);
             this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(440, 68);
+            this.label1.Size = new System.Drawing.Size(438, 72);
             this.label1.TabIndex = 4;
             this.label1.Text = "Вас приветствует мини игра \"Угадай число\"!\r\nПравила игры:\r\n1. Вписывать числа.\r\n2" +
     ". Стараться угадать число за наименьшее количество попыток.\r\n";
